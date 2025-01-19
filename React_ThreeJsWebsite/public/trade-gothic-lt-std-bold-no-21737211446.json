@@ -1,0 +1,131 @@
+[{
+  "version": "1.0",
+  "image": {
+    "name": "/var/www/imageconvert_usr/data/www/imageconvert.org/image/public/uploadt/trade-gothic-lt-std-bold-no-2.otf",
+    "format": "json",
+    "formatDescription": "The image format and characteristics",
+    "mimeType": "application/json",
+    "class": "DirectClass",
+    "geometry": {
+      "width": 800,
+      "height": 480,
+      "x": 0,
+      "y": 0
+    },
+    "units": "Undefined",
+    "type": "GrayscaleAlpha",
+    "endianness": "Undefined",
+    "colorspace": "sRGB",
+    "depth": 8,
+    "baseDepth": 16,
+    "channelDepth": {
+      "alpha": 1,
+      "red": 8,
+      "green": 8,
+      "blue": 8
+    },
+    "pixels": 384000,
+    "imageStatistics": {
+      "all": {
+        "min": 0,
+        "max": 65535,
+        "mean": 58847.7,
+        "standardDeviation": 16122.8,
+        "kurtosis": 5.02771,
+        "skewness": -2.61602,
+        "entropy": 0.122989
+      }
+    },
+    "channelStatistics": {
+      "alpha": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "standardDeviation": 0,
+        "kurtosis": 1.6384e+52,
+        "skewness": 9.375e+35,
+        "entropy": 0
+      },
+      "red": {
+        "min": 0,
+        "max": 65535,
+        "mean": 56618.6,
+        "standardDeviation": 21497.1,
+        "kurtosis": 2.60642,
+        "skewness": -2.11109,
+        "entropy": 0.163986
+      },
+      "green": {
+        "min": 0,
+        "max": 65535,
+        "mean": 56618.6,
+        "standardDeviation": 21497.1,
+        "kurtosis": 2.60642,
+        "skewness": -2.11109,
+        "entropy": 0.163986
+      },
+      "blue": {
+        "min": 0,
+        "max": 65535,
+        "mean": 56618.6,
+        "standardDeviation": 21497.1,
+        "kurtosis": 2.60642,
+        "skewness": -2.11109,
+        "entropy": 0.163986
+      }
+    },
+    "renderingIntent": "Perceptual",
+    "gamma": 0.454545,
+    "chromaticity": {
+      "redPrimary": {
+        "x": 0.64,
+        "y": 0.33
+      },
+      "greenPrimary": {
+        "x": 0.3,
+        "y": 0.6
+      },
+      "bluePrimary": {
+        "x": 0.15,
+        "y": 0.06
+      },
+      "whitePrimary": {
+        "x": 0.3127,
+        "y": 0.329
+      }
+    },
+    "backgroundColor": "#FFFFFFFFFFFFFFFF",
+    "borderColor": "#DFDFDFDFDFDFFFFF",
+    "matteColor": "#BDBDBDBDBDBDFFFF",
+    "transparentColor": "#0000000000000000",
+    "interlace": "None",
+    "intensity": "Undefined",
+    "compose": "Over",
+    "pageGeometry": {
+      "width": 800,
+      "height": 480,
+      "x": 0,
+      "y": 0
+    },
+    "dispose": "Undefined",
+    "iterations": 0,
+    "compression": "Undefined",
+    "orientation": "Undefined",
+    "properties": {
+      "date:create": "2025-01-18T14:44:05+00:00",
+      "date:modify": "2025-01-18T14:44:05+00:00",
+      "signature": "8080e2e1e1ed5f32d5ab2c176a0f9c7394ef5370b00997c36b3167670da77368"
+    },
+    "artifacts": {
+      "mvg:vector-graphics": "push graphic-context\n viewbox 0 0 800 480\n font-size 18\n text 10,20 'abcdefghijklmnopqrstuvwxyz\nABCDEFGHIJKLMNOPQRSTUVWXYZ\n0123456789.:,;(*!?}^)#${%^&-+@\n'\n font-size 18\n text 10,144 '12'\n font-size 12\n text 50,144 'That which does not destroy me, only makes me stronger.'\n font-size 18\n text 10,174 '18'\n font-size 18\n text 50,174 'That which does not destroy me, only makes me stronger.'\n font-size 18\n text 10,210 '24'\n font-size 24\n text 50,210 'That which does not destroy me, only makes me stronger.'\n font-size 18\n text 10,258 '36'\n font-size 36\n text 50,258 'That which does not destroy me, only makes me stronger.'\n font-size 18\n text 10,318 '48'\n font-size 48\n text 50,318 'That which does not destroy me, only makes me stronger.'\n font-size 18\n text 10,390 '60'\n font-size 60\n text 50,390 'That which does not destroy me, only makes me stronger.'\n font-size 18\n text 10,474 '72'\n font-size 72\n text 50,474 'That which does not destroy me, only makes me stronger.'\npop graphic-context"
+    },
+    "tainted": false,
+    "filesize": "27864B",
+    "numberPixels": "384000",
+    "pixelsPerSecond": "14.6635MB",
+    "userTime": "0.030u",
+    "elapsedTime": "0:01.026",
+    "version": "ImageMagick 6.9.11-60 Q16 x86_64 2021-01-25 https://imagemagick.org"
+  }
+}
+]

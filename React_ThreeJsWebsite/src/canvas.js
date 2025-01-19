@@ -2,6 +2,10 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import Stats from 'three/examples/jsm/libs/stats.module';
 import gsap from 'gsap';
+import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
+import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
 
 // Stats
 const stats = Stats();
@@ -12,13 +16,13 @@ const scene = new THREE.Scene();
 
 // Create a camera (field of view, aspect ratio, near, far)
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.set(0, 0, 0);
+camera.position.set(0, 1.25, 2);
 
 // cameraToProjects function
 export function cameraToProjects() {
     console.log("cameraToProjects called");
     gsap.to(camera.position, {x: 60, y: 0, z: 0, duration: 2});
-    gsap.to(camera.rotation, {x: 0, y: -1.6, z: 0, duration: 2});
+    gsap.to(camera.rotation, {x: 0, y: -1.55, z: 0, duration: 2});
       
     console.log(`Camera position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
   }
@@ -27,7 +31,7 @@ export function cameraToProjects() {
 export function cameraToAbout() {
     console.log("cameraToAbout called");
     gsap.to(camera.position, {x: -60, y: 0, z: 0, duration: 2});
-    gsap.to(camera.rotation, {x: 0, y: 1.6, z: 0, duration: 2});
+    gsap.to(camera.rotation, {x: 0, y: 1.55, z: 0, duration: 2});
       
     console.log(`Camera position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
 }
@@ -56,6 +60,17 @@ window.addEventListener('resize', () => {
 
 // Create a geometry
 
+// import gltf model
+const Roomloader = new GLTFLoader();
+Roomloader.load('./scene (1).gltf', function(gltf) {
+    scene.add(gltf.scene);
+    gltf.scene.position.set(0, 0, 0);
+    gltf.scene.scale.set(1, 1, 1);
+    gltf.scene.rotation.set(0, -1.55, 0);
+});
+
+
+
 // place holder cubes
 const greenCubeGeometry = new THREE.BoxGeometry(5, 5, 5);
 const greenCubeMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
@@ -75,6 +90,27 @@ const blueCubeMaterial = new THREE.MeshBasicMaterial({ color: 0x0000ff, wirefram
 const blueCube = new THREE.Mesh(blueCubeGeometry, blueCubeMaterial);
 scene.add(blueCube);
 blueCube.position.y = 70
+
+// create text geometry
+const loader = new FontLoader();
+loader.load("./Montserrat_Regular.json", function(font) {
+    const textGeometry = new TextGeometry("Projects", {
+      font: font,
+      size: 5,
+      height: 1,  
+    });
+
+    const text = new THREE.Mesh(textGeometry, [
+        new THREE.MeshBasicMaterial({ color: 0xffffff }),
+        new THREE.MeshBasicMaterial({ color: 0xffffff }),
+    ]);
+    scene.add(text);
+    text.position.x = 80;
+    text.position.z = -15;
+    text.rotation.y = -(Math.PI / 2);
+});
+
+
 
 
 // star particles
